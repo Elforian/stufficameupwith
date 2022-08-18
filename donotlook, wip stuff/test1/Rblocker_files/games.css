@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+body {
+	background-color: transparent;
+	color: #fb4d4d;
+	font-family: 'Poppins', sans-serif;
+	overflow: hidden;
+}
+
+.container {
+	padding: -10px;
+}
+
+.box {
+	margin: auto;
+	background-color: transparent;
+	padding: 10px;
+	width: 400px;
+}
+
+#glist {
+	overflow-x: hidden;
+	overflow-y: scroll;
+	width: 400px;
+	height: 540px;
+	padding: 0;
+	text-align: center;
+	border-radius: 12px;
+}
+
+#gsearchbar {
+	outline: none;
+	width: 374px;
+	font-size: 22px;
+	border: none;
+	padding: 12px;
+	margin-bottom: 10px;
+	transition: 0.2s ease;
+    background-color: #363636;
+	border-radius: 12px;
+}
+
+::placeholder {
+	color: #fb4d4d;
+}
+
+#glist::-webkit-scrollbar {
+    display: none;
+}
+#gsearchbar:focus {
+	background-color: #303030;
+}
+
+#glist h2 {
+	display: block;
+	color: #fb4d4d;
+	font: 18px;
+	border: 1px solid #060606;
+	margin: -1px 0 0 0;
+	background-color: #060606;
+	padding: 12px;
+	font-weight: bold;
+	user-select: none;
+}
+
+input {
+	color:#fb4d4d;
+	text-align: center;
+	font: 12px;
+	font-family: 'Poppins', sans-serif;
+}
+
+#glist a {
+	display: block;
+	text-decoration: inherit;
+	color: #fb4d4d;
+	font-size: 18px;
+	border: none;
+	margin-top: -1px;
+	background-color: transparent;
+	padding: 12px;
+	transition: 0.2s ease;
+}
+
+#glist a:hover {
+	background-color: #494949;
+    font-size: 20px;
+}
+
+::placeholder {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1915px) {
+	#glist {
+		overflow-x: hidden;
+		overflow-y: scroll;
+		width: 400px;
+		height: 410px;
+	}
+  }
+
+  .game-div {
+	  background-color: #363636;
+	  width: 100%;
+	  height: 100px;
+  }
+  .game-div:hover {
+	background-color: #3d3d3d;
+}
+
+.game-div .record {
+	color:white;
+	font-size: 15px;
+	margin-bottom: 200%;
+}
+.game-div .record:hover {
+	color:transparent;
+	padding-right: 15%;
+	position: relative;
+}
+
+.record:hover:after{
+	color: rgb(0, 165, 0);
+	font-weight: 1000;
+    content:'Beaten Score? Click Here If So!';
+	cursor: pointer;
+}
+
+.featured {
+	position: absolute;
+	left:27.7%;
+	width:700px;
+	background-color: #363636;
+	top: 560px;
+	height: 150px;
+	border-radius: 10px;
+  }
+  
+  .featured-container {
+	position: absolute;
+	left:27.7%;
+	width:700px;
+	top: 555px;
+	height: 165px;
+  }
+  
+  .featured-box {
+	float: left;
+	justify-content: space-between;
+	padding-right: 20px;
+  }
+  .featured-box img {
+	height: 115px;
+	width: 115px;
+	border-radius: 12px;
+	animation: pulse 1.5s ease infinite;
+	user-select: none;
+  }
+  
+  .featured-box:hover {
+	cursor: pointer;
+	-webkit-animation: swing 1s ease;
+	animation: swing 1s ease;
+	-webkit-animation-iteration-count: 1;
+	animation-iteration-count: 1;
+	user-select: none;
+  }
+
+  .mc1 {
+	margin-top:25px;
+	margin-left:25px;
+	height: 115px;
+	width: 115px;
+	border-radius: 12px;
+	animation: pulse 1.5s ease infinite;
+	user-select: none;
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(.95);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  @-webkit-keyframes swing {
+    15% {
+        -webkit-transform: translateY(5px);
+        transform: translateY(5px);
+    }
+    30% {
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
+    50% {
+        -webkit-transform: translateY(3px);
+        transform: translateY(3px);
+    }
+    65% {
+        -webkit-transform: translateY(-3px);
+        transform: translateY(-3px);
+    }
+    80% {
+        -webkit-transform: translateY(2px);
+        transform: translateY(2px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+  }
+  
+  @keyframes swing {
+    15% {
+        -webkit-transform: translateY(5px);
+        transform: translateY(5px);
+    }
+    30% {
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
+    50% {
+        -webkit-transform: translateY(3px);
+        transform: translateY(3px);
+    }
+    65% {
+        -webkit-transform: translateY(-3px);
+        transform: translateY(-3px);
+    }
+    80% {
+        -webkit-transform: translateY(2px);
+        transform: translateY(2px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+  }
